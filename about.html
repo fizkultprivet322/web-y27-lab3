@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Website for Ceramic soul brand" />
+    <meta name="author" content="Awesome student" />
+    <title>Ceramic soul</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+            href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,500;1,400&display=swap"
+            rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/src/sass/style.scss" />
+    <link rel="stylesheet" href="/src/sass/libs/fontello.css" />
+</head>
+<body class="about-page">
+<div class="burger-menu" id="burgerMenu">
+    <div class="burger-menu__close" id="burgerClose">×</div>
+    <nav class="burger-menu__nav">
+        <a href="catalog.html" class="burger-menu__link">CATALOG</a>
+        <a href="blog.html" class="burger-menu__link">BLOG</a>
+        <a href="about.html" class="burger-menu__link">ABOUT</a>
+    </nav>
+</div>
+<header class="header">
+    <div class="burger" id="burgerBtn"><span></span><span></span><span></span></div>
+    <div class="header__brand">
+        <a href="index.html" class="header__logo">
+            <img src="/src/logo/logo.png" alt="logo" />
+        </a>
+        <nav class="header__nav">
+            <a href="catalog.html" class="header__nav-link">CATALOG</a>
+            <a href="blog.html" class="header__nav-link">BLOG</a>
+            <a href="about.html" class="header__nav-link">ABOUT</a>
+        </nav>
+    </div>
+    <div class="header__icons">
+        <a href="#"><span class="icon-search"></span></a>
+        <a href="#"><span class="icon-shopping-bag"></span></a>
+    </div>
+</header>
+
+<section class="about">
+    <div class="about__container">
+        <h1 class="about__title">WHERE IT ALL BEGAN</h1>
+        
+        <div class="about__content">
+            <div class="about__image">
+                <img src="/src/img/about/crafts.jpg" alt="Pottery workshop" />
+            </div>
+            
+            <div class="about__text">
+                <p>Our small pottery workshop began as a simple passion project, rooted in a love for handmade artistry and traditional craftsmanship. What started with a single wheel and a few lumps of clay has grown into a cozy creative space where ideas take shape and stories are told through every piece. Inspired by timeless techniques and the beauty of natural materials, we've built a place where both beginners and experienced artists can come together, share their skills, and celebrate the art of pottery. Each creation reflects our journey—shaped by hand, fired with care, and made to be cherished.</p>
+                
+                <p>Over the years, our workshop has become more than just a place to create—it's a community. Friends, families, and curious visitors gather here to learn, connect, and experience the joy of working with clay. From intimate masterclasses to collaborative projects, we believe in the power of handmade art to bring people together and spark creativity in unexpected ways.</p>
+                
+                <p>Every piece that leaves our studio carries a bit of our story, blending tradition with personal expression. Whether it's a simple cup or an intricate vase, our ceramics are crafted to be both beautiful and functional, adding warmth and authenticity to any space.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="get-in-touch">
+    <div class="get-in-touch__container">
+        <h2 class="get-in-touch__title">GET IN TOUCH</h2>
+
+        <div class="get-in-touch__content">
+            <div class="get-in-touch__image">
+                <img src="/src/img/form/tea.jpg" alt="Ceramic tea set" />
+            </div>
+
+            <div class="get-in-touch__form">
+                <form class="contact-form" id="contactForm">
+                    <div class="contact-form__row">
+                        <div class="contact-form__field">
+                            <label for="name" class="contact-form__label">Name</label>
+                            <input
+                                    type="text"
+                                    id="name"
+                                    name="name"
+                                    class="contact-form__input"
+                                    placeholder="Name"
+                            />
+                            <div class="contact-form__error" id="name-error"></div>
+                        </div>
+
+                        <div class="contact-form__field">
+                            <label for="email" class="contact-form__label">Email</label>
+                            <input
+                                    type="email"
+                                    id="email"
+                                    name="email"
+                                    class="contact-form__input"
+                                    placeholder="Email"
+                            />
+                            <div class="contact-form__error" id="email-error"></div>
+                        </div>
+                    </div>
+
+                    <div class="contact-form__field">
+                        <label for="question" class="contact-form__label">Your question</label>
+                        <textarea
+                                id="question"
+                                name="question"
+                                class="contact-form__textarea"
+                                placeholder="Question"
+                                rows="4"
+                        ></textarea>
+                        <div class="contact-form__error" id="question-error"></div>
+                    </div>
+
+                    <div class="contact-form__checkbox">
+                        <input type="checkbox" id="terms" name="terms" class="contact-form__checkbox-input" />
+                        <label for="terms" class="contact-form__checkbox-label">
+                            I agree with the <a href="#" class="contact-form__link">terms</a>
+                        </label>
+                        <div class="contact-form__error" id="terms-error"></div>
+                    </div>
+
+                    <button type="submit" class="contact-form__submit">SEND REQUEST</button>
+
+                    <div class="get-in-touch__vase">
+                        <img src="/src/img/form/vase.png" alt="Ceramic vase" />
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="find-us">
+    <div class="find-us__container">
+        <h2 class="find-us__title">FIND US</h2>
+        <div class="find-us__map">
+            <a href="https://yandex.ru/maps/org/psikhiatricheskaya_bolnitsa_1_imeni_p_p_kashchenko_statsionar_2/1087534336/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Психиатрическая больница № 1 имени П.П. Кащенко, стационар № 2</a>
+            <a href="https://yandex.ru/maps/2/saint-petersburg/category/department_of_the_hospital/198395289542/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:14px;">Отделение больницы, госпиталя в Санкт‑Петербурге</a>
+            <a href="https://yandex.ru/maps/2/saint-petersburg/category/specialized_hospital/53437260559/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:28px;">Специализированная больница в Санкт‑Петербурге</a>
+            <iframe src="https://yandex.ru/map-widget/v1/org/psikhiatricheskaya_bolnitsa_1_imeni_p_p_kashchenko_statsionar_2/1087534336/?ll=30.302573%2C59.917290&z=17" width="1000" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe>
+        </div>
+    </div>
+</section>
+<footer class="footer">
+    <div class="footer__container">
+        <div class="footer__content">
+            <div class="footer__section footer__newsletter">
+                <h3 class="footer__title">Newsletter</h3>
+                <p class="footer__description">Keep up to date with news and promotions</p>
+                <form class="footer__form">
+                    <input type="email" class="footer__input" placeholder="Enter your e-mail" />
+                    <div class="footer__checkbox">
+                        <input type="checkbox" id="footer-terms" class="footer__checkbox-input" />
+                        <label for="footer-terms" class="footer__checkbox-label">
+                            I agree with the <a href="#" class="footer__link-terms">terms</a>
+                        </label>
+                    </div>
+                    <button type="submit" class="footer__submit">Submit</button>
+                </form>
+            </div>
+
+            <div class="footer__section">
+                <h3 class="footer__title">Discover</h3>
+                <nav class="footer__nav">
+                    <a href="#" class="footer__link">About Us</a>
+                    <a href="#" class="footer__link">Blog</a>
+                </nav>
+            </div>
+
+            <div class="footer__section">
+                <h3 class="footer__title">Shopping</h3>
+                <nav class="footer__nav">
+                    <a href="catalog.html" class="footer__link">Catalog</a>
+                </nav>
+            </div>
+
+            <div class="footer__section">
+                <h3 class="footer__title">Information</h3>
+                <nav class="footer__nav">
+                    <a href="#" class="footer__link">Terms and Conditions</a>
+                </nav>
+            </div>
+
+            <div class="footer__section">
+                <h3 class="footer__title">Follow Us</h3>
+                <div class="footer__social">
+                    <a href="#" class="footer__social-link">
+                        <span class="icon-facebook"></span>
+                    </a>
+                    <a href="#" class="footer__social-link">
+                        <span class="icon-instagram"></span>
+                    </a>
+                    <a href="#" class="footer__social-link">
+                        <span class="icon-pinterest-circled"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer__copyright">
+            <p>© Copyright 2025, Ceramic soul</p>
+        </div>
+    </div>
+</footer>
+<script type="module" src="/src/js/script.js"></script>
+<script type="module" src="/src/js/burger-menu.js"></script>
+</body>
+</html>

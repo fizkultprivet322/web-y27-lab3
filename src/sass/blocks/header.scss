@@ -1,0 +1,138 @@
+@use "/src/sass/base/variables.scss" as *;
+@use "/src/sass/base/placeholders.scss" as *;
+@use "/src/sass/base/mixins.scss" as *;
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	padding: 20px 0;
+
+	@include desktop {
+		padding: 20px 20px 20px 0;
+	}
+
+	@include tablet {
+		padding: 15px 15px 15px 0;
+	}
+
+	@include mobile {
+		padding: 15px 0;
+		flex-wrap: wrap;
+	}
+
+	&__brand {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		position: relative;
+		@include mobile {
+			flex-direction: row;
+			align-items: center;
+			gap: 15px;
+		}
+	}
+
+	&__logo {
+		width: 100px;
+		height: 100px;
+		margin-bottom: 10px;
+
+		@include mobile {
+			width: 60px;
+			height: 60px;
+			margin-bottom: 0;
+		}
+
+		@include mobile-small {
+			width: 50px;
+			height: 50px;
+		}
+	}
+
+	&__icons {
+		display: flex;
+		align-items: flex-start;
+		gap: 15px;
+
+		@include mobile {
+			gap: 10px;
+		}
+
+		a {
+			display: block;
+			color: $dark;
+
+			span {
+				display: block;
+				width: 20px;
+				height: 20px;
+
+				@include mobile {
+					width: 18px;
+					height: 18px;
+				}
+			}
+		}
+	}
+
+	&__nav {
+		display: flex;
+		gap: 60px;
+		margin-top: 36px;
+
+		@include mobile {
+			display: none;
+		}
+
+		@include tablet {
+			gap: 40px;
+			margin-top: 20px;
+		}
+	}
+
+	&__nav-link {
+		@extend %nav-link;
+
+		@include tablet {
+			font-size: 18px;
+		}
+	}
+}
+
+.burger {
+	display: none;
+
+	@include mobile {
+		display: flex;
+	}
+
+	height: 23px;
+	flex-direction: column;
+	row-gap: 10px;
+	padding-right: 35px;
+
+	@include mobile {
+		padding-right: 20px;
+		row-gap: 8px;
+	}
+
+	@include mobile-small {
+		padding-right: 15px;
+		row-gap: 6px;
+	}
+
+	span {
+		display: block;
+		width: 20px;
+		height: 1px;
+		background-color: $dark;
+
+		@include mobile {
+			width: 18px;
+		}
+
+		@include mobile-small {
+			width: 16px;
+		}
+	}
+}

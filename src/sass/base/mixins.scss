@@ -1,0 +1,55 @@
+@use "/src/sass/base/variables.scss" as *;
+
+@mixin mobile {
+  @media (max-width: #{$tablet - 1px}) { @content; }
+}
+
+@mixin mobile-small {
+  @media (max-width: #{$mobile - 1px}) { @content; }
+}
+
+@mixin tablet {
+  @media (min-width: $tablet) and (max-width: #{$desktop - 1px}) { @content; }
+}
+
+@mixin desktop {
+  @media (min-width: $desktop) and (max-width: #{$large-desktop - 1px}) { @content; }
+}
+
+@mixin large-desktop {
+  @media (min-width: $large-desktop) { @content; }
+}
+
+@mixin tablet-up {
+  @media (min-width: $tablet) { @content; }
+}
+
+@mixin desktop-up {
+  @media (min-width: $desktop) { @content; }
+}
+
+@mixin title {
+  color: $dark;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+@mixin button {
+  display: block;
+  background: transparent;
+  border: 1px solid $dark;
+  border-radius: 2px;
+  color: $dark;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  
+  &:hover {
+    background: $dark;
+    color: $light;
+  }
+}
+

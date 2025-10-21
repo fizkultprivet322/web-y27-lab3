@@ -1,0 +1,41 @@
+@use "/src/sass/base/variables.scss" as *;
+@use "/src/sass/base/mixins.scss" as *;
+
+%nav-link {
+  font-family: $font-primary;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1;
+  text-transform: uppercase;
+  color: $dark;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  
+  &:hover {
+    color: $ceramic;
+  }
+}
+
+%container {
+  max-width: $container-desktop;
+  margin: 0 auto;
+  padding: 0 20px;
+  
+  @include mobile {
+    padding: 0 15px;
+  }
+  
+  @include tablet {
+    max-width: $container-tablet;
+    padding: 0 20px;
+  }
+  
+  @include desktop {
+    max-width: $container-desktop;
+  }
+  
+  @include large-desktop {
+    max-width: $container-large;
+  }
+}
+

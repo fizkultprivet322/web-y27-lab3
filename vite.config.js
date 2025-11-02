@@ -1,10 +1,7 @@
 import { defineConfig } from "vite";
 
-const isCI = process.env.GITHUB_ACTIONS === "true";
-const repository = process.env.GITHUB_REPOSITORY?.split("/")[1] ?? "";
-
 export default defineConfig({
-  base: isCI && repository ? `/${repository}/` : "/",
+  base: process.env.NODE_ENV === "production" ? "./" : "/",
   build: {
     rollupOptions: {
       input: {

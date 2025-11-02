@@ -1,7 +1,7 @@
 import { defineConfig } from "vite";
 
-export default defineConfig({
-  base: process.env.NODE_ENV === "production" ? "./" : "/",
+export default defineConfig(({ command }) => ({
+  base: command === "build" ? "./" : "/",
   build: {
     rollupOptions: {
       input: {
@@ -12,4 +12,4 @@ export default defineConfig({
       }
     }
   }
-});
+}));
